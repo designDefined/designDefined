@@ -1,0 +1,7 @@
+@import "./font.css";
+
+:root {
+  font-family: "Pretendard Variable", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+}
