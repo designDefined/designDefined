@@ -1,13 +1,17 @@
 import "./App.css";
-import { Article, Div, H1, H2, Header, Main, Section } from "@flexive/core";
+import { Article, Div, H1, H2, Header, Hgroup, Main, P, Section } from "@flexive/core";
 
 function App() {
   return (
     <Article row>
       <Div grow={2} basis={16} />
       <Main f>
-        <Header></Header>
-        <H1>I'm DesignDefined</H1>
+        <Header>
+          <Hgroup>
+            <H1>DesignDefined</H1>
+            <P>Web Frontend Developer</P>
+          </Hgroup>
+        </Header>
         <Section>
           <H2></H2>
         </Section>
