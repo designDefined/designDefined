@@ -1,0 +1,8 @@
+.Divider .sectionLabel {
+  font-size: 16px;
+  font-weight: 200;
+}
+.Divider .line {
+  height: 1px;
+  background-color: rgb(55% 55% 55%);
+}

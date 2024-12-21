@@ -1,0 +1,27 @@
+.Card {
+  border: 1px solid #ccc;
+  background-color: rgb(5% 5% 5%);
+  transition: 0.2s ease;
+}
+.Card:hover {
+  background-color: #333;
+}
+
+.Card h3 {
+  font-size: 24px;
+  font-weight: 600;
+}
+.Card p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 120%;
+  color: 1px solid #aaa;
+}
+.Card a {
+  font-size: 14px;
+  border: 1px solid #777;
+}
+.Card a:hover {
+  background-color: #111;
+  color: white;
+}

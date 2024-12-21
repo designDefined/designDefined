@@ -1,0 +1,42 @@
+.App {
+  color: rgb(90% 90% 90%);
+}
+
+.App h1 {
+  font-size: 64px;
+  font-weight: 900;
+  color: black;
+  text-shadow:
+    3px 3px 0px rgb(90% 90% 90%),
+    -1px -1px 0px rgb(90% 90% 90%),
+    1px -1px 0px rgb(90% 90% 90%),
+    -1px 1px 0px rgb(90% 90% 90%);
+}
+
+.role {
+  font-size: 24px;
+  font-weight: 200;
+  color: rgb(75% 75% 75%);
+}
+
+.contact {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 140%;
+  color: white;
+}
+.contact a {
+  text-decoration: underline;
+}
+
+.vertical {
+  width: 1px;
+  height: 2em;
+  background-color: rgb(50% 50% 50%);
+}
+
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 48px;
+  }
+}
