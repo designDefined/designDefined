@@ -18,7 +18,7 @@ function App() {
               <P className={styles.role}>Web Frontend Developer</P>
             </Hgroup>
           </Header>
-          <p className={styles.contact}>
+          <P className={styles.contact} block pb={8}>
             Please contact me via{" "}
             <a className={styles.mail} href="mailto:designdefined.by@gmail.com" target="_blank">
               Email
@@ -32,7 +32,8 @@ function App() {
               LinkedIn
             </a>
             .
-          </p>
+          </P>
+          <P block>v0.1.0 - Dec 23, 2024</P>
           <Section py={64} g={32}>
             <Divider title="Who am I" />
             <Ul row px={24} g={24} wrap>
