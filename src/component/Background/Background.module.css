@@ -1,5 +1,94 @@
-.Background {
+:root {
   background-color: black;
+}
+.Background {
+  --background-color: #050201;
+  background-color: var(--background-color);
   width: 100vw;
   height: 100vh;
+  animation: brighten 3.5s ease-in;
+  animation-fill-mode: forwards;
+}
+
+.diamond {
+  background: radial-gradient(circle at center, white, var(--background-color) 100%);
+  mix-blend-mode: color-dodge;
+  border-radius: 50%;
+  opacity: 0;
+  animation: brighten2 1.5s ease;
+  animation-delay: 1.5s;
+  z-index: -1;
+  transform: translate(-81px, -81px);
+}
+
+.white {
+  background: radial-gradient(circle at center, white 40%, var(--background-color) 60%);
+  border-radius: 50%;
+  mix-blend-mode: color-dodge;
+}
+
+.black {
+  background-color: var(--background-color);
+  /* background: radial-gradient(circle at center, var(--background-color), #f35f2e 100%); */
+  border-radius: 50%;
+  animation: eclipse 3s cubic-bezier(0.28, 0.26, 0.18, 0.95);
+}
+
+.message {
+  font-family: "Raleway", serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: italic;
+  color: white;
+  font-size: 16px;
+  z-index: 1;
+  text-align: center;
+  opacity: 0;
+  animation: brighten3 5s ease;
+}
+
+@keyframes brighten {
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.3;
+  }
+}
+@keyframes brighten2 {
+  0% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes brighten3 {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes eclipse {
+  0% {
+    transform: translate(100px, 100px);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(0, 0);
+  }
 }
