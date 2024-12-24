@@ -1,0 +1,15 @@
+.Chip {
+  border: 1px solid #aaa;
+  color: #ccc;
+  font-weight: 600;
+}
+a.Chip {
+  transition: 0.1s ease;
+}
+a.Chip:hover {
+  background-color: #333;
+  color: white;
+}
+a.Chip:active {
+  background-color: #111;
+}
