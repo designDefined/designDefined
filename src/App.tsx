@@ -33,7 +33,7 @@ function App() {
             </a>
             .
           </P>
-          <P block>v0.1.0 - Dec 23, 2024</P>
+          <P block>v0.2.0 - Dec 26, 2024</P>
           <Section py={64} g={32}>
             <Divider title="Who am I" />
             <Ul row px={24} g={24} wrap>
