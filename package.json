@@ -9,11 +9,13 @@
     "format": "prettier --write .",
     "build": "tsc -b && vite build",
     "generate": "yarn build && tsx --tsconfig ./tsconfig.app.json ./src/generate/index.ts",
-    "preview": "serve dist"
+    "preview": "serve dist",
+    "prepare": "husky && echo 'yarn build' > .husky/pre-commit"
   },
   "dependencies": {
     "@flexive/core": "^0.5.7",
     "@flexive/operator": "^0.2.0",
+    "husky": "^9.1.7",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
   },
