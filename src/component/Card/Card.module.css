@@ -3,9 +3,6 @@
   background-color: rgb(5% 5% 5%);
   transition: 0.2s ease;
 }
-.Card:hover {
-  background-color: #333;
-}
 
 .Card h3 {
   font-size: 24px;
@@ -24,4 +21,10 @@
 .Card a:hover {
   background-color: #111;
   color: white;
+}
+
+@media (pointer: fine) {
+  .Card:hover {
+    background-color: #333;
+  }
 }
