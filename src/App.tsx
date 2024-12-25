@@ -42,7 +42,7 @@ function App() {
                 description="Frontend developer of Classday, Education management and communication platform startup."
               />
               <Card
-                name="Define myself as"
+                name="Self-Defined as"
                 description="Declarative Programmer, Typescript Enthusiast, Open-source Novice, and UI Architect."
               />
               <Card name="Majored in" description="Communications, Information Science and Culture(ISC)." />
@@ -51,7 +51,7 @@ function App() {
           <Section py={64} g={32}>
             <Divider title="Project & Library" />
             <Ul row px={24} g={24} wrap>
-              <Card name="The Codec" description="My blog. Written in Korean only." />
+              <Card name="The Codec" description="My blog." />
               <Card
                 name="Flexive Core"
                 description="React components to build flexbox based UI and design systems."
@@ -60,7 +60,7 @@ function App() {
               />
               <Card
                 name="Flexive Operator"
-                description="React toolbox for better UX"
+                description="Toolbox for managing in-component states and interactions."
                 github="https://github.com/designDefined/flexive"
                 npm="https://www.npmjs.com/package/@flexive/operator"
               />
