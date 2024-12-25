@@ -9,7 +9,7 @@
     "format": "prettier --write .",
     "build": "tsc -b && vite build",
     "generate": "yarn build && tsx --tsconfig ./tsconfig.app.json ./src/generate/index.ts",
-    "preview": "serve dist",
+    "preview": "yarn generate && serve dist",
     "prepare": "husky && echo 'yarn build' > .husky/pre-commit"
   },
   "dependencies": {
