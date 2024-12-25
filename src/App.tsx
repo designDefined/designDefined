@@ -76,7 +76,9 @@ function App() {
           <Section py={64} g={32}>
             <Divider title="Skill & Hobby" />
             <Section px={24} g={16}>
-              <H3 px={8}>Advanced</H3>
+              <H3 className={styles.chipLabel} px={8}>
+                Advanced
+              </H3>
               <Ul row px={0} g={12} wrap>
                 <Chip name="Typescript" url="https://www.typescriptlang.org/" />
                 <Chip name="React" url="https://react.dev/" />
@@ -89,7 +91,9 @@ function App() {
               </Ul>
             </Section>
             <Section px={24} g={16}>
-              <H3 px={8}>Medium</H3>
+              <H3 className={styles.chipLabel} px={8}>
+                Medium
+              </H3>
               <Ul row px={0} g={12} wrap>
                 <Chip name="NextJS" url="https://nextjs.org/" />
                 <Chip name="Express" url="https://expressjs.com/" />
@@ -102,7 +106,9 @@ function App() {
               </Ul>
             </Section>
             <Section px={24} g={16}>
-              <H3 px={8}>Interested in</H3>
+              <H3 className={styles.chipLabel} px={8}>
+                Interested in
+              </H3>
               <Ul row px={0} g={12} wrap>
                 <Chip name="RxJS" url="https://rxjs.dev/" />
                 <Chip name="Rollup" url="https://rollupjs.org/" />

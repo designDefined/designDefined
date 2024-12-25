@@ -1,15 +1,16 @@
 .Chip {
-  border: 1px solid #aaa;
-  color: #ccc;
+  border: 1px solid oklch(60% var(--yellow));
+  background-color: oklch(var(--black) / 0.5);
+  color: oklch(80% var(--lemon));
   font-weight: 600;
 }
 a.Chip {
   transition: 0.1s ease;
 }
 a.Chip:hover {
-  background-color: #333;
-  color: white;
+  background-color: oklch(var(--gray) / 0.5);
+  color: oklch(90% var(--lemon));
 }
 a.Chip:active {
-  background-color: #111;
+  background-color: oklch(var(--black) / 0.8);
 }

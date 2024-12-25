@@ -1,0 +1,7 @@
+:root {
+  --yellow: 0.146 81.3;
+  --lemon: 0.04 81.3;
+  --black: 10% 0 0;
+  --gray: 30% 0 0;
+  color: oklch(90% var(--lemon));
+}
