@@ -1,5 +1,7 @@
 .App {
-  color: rgb(90% 90% 90%);
+  animation: reveal 1s ease;
+  animation-fill-mode: backwards;
+  animation-delay: 3.5s;
 }
 
 .App h1 {
@@ -7,28 +9,31 @@
   font-weight: 900;
   color: black;
   text-shadow:
-    3px 3px 0px rgb(90% 90% 90%),
-    -1px -1px 0px rgb(90% 90% 90%),
-    1px -1px 0px rgb(90% 90% 90%),
-    -1px 1px 0px rgb(90% 90% 90%);
+    3px 3px 0px oklch(85% var(--yellow)),
+    -1px -1px 0px oklch(85% var(--yellow)),
+    1px -1px 0px oklch(85% var(--yellow)),
+    -1px 1px 0px oklch(85% var(--yellow));
 }
 
 .role {
   font-size: 24px;
   font-weight: 200;
-  color: rgb(75% 75% 75%);
+  color: oklch(90% var(--lemon));
 }
 
 .contact {
   font-size: 18px;
   font-weight: 400;
   line-height: 140%;
-  color: white;
+  color: oklch(90% var(--lemon));
 }
 .contact a {
   text-decoration: underline;
 }
 
+.chipLabel {
+  color: oklch(80% var(--yellow));
+}
 .vertical {
   width: 1px;
   height: 2em;
@@ -38,5 +43,20 @@
 @media screen and (max-width: 600px) {
   h1 {
     font-size: 48px;
+  }
+}
+
+@keyframes reveal {
+  0% {
+    opacity: 0;
+    height: 100vh;
+    overflow: hidden;
+  }
+  1% {
+    height: auto;
+    overflow: auto;
+  }
+  100% {
+    opacity: 1;
   }
 }

@@ -33,7 +33,7 @@ function App() {
             </a>
             .
           </P>
-          <P block>v0.1.0 - Dec 23, 2024</P>
+          <P block>v0.2.0 - Dec 26, 2024</P>
           <Section py={64} g={32}>
             <Divider title="Who am I" />
             <Ul row px={24} g={24} wrap>
@@ -42,7 +42,7 @@ function App() {
                 description="Frontend developer of Classday, Education management and communication platform startup."
               />
               <Card
-                name="Define myself as"
+                name="Self-Defined as"
                 description="Declarative Programmer, Typescript Enthusiast, Open-source Novice, and UI Architect."
               />
               <Card name="Majored in" description="Communications, Information Science and Culture(ISC)." />
@@ -51,7 +51,7 @@ function App() {
           <Section py={64} g={32}>
             <Divider title="Project & Library" />
             <Ul row px={24} g={24} wrap>
-              <Card name="The Codec" description="My blog. Written in Korean only." />
+              <Card name="The Codec" description="My blog." />
               <Card
                 name="Flexive Core"
                 description="React components to build flexbox based UI and design systems."
@@ -60,7 +60,7 @@ function App() {
               />
               <Card
                 name="Flexive Operator"
-                description="React toolbox for better UX"
+                description="Toolbox for managing in-component states and interactions."
                 github="https://github.com/designDefined/flexive"
                 npm="https://www.npmjs.com/package/@flexive/operator"
               />
@@ -76,7 +76,9 @@ function App() {
           <Section py={64} g={32}>
             <Divider title="Skill & Hobby" />
             <Section px={24} g={16}>
-              <H3 px={8}>Advanced</H3>
+              <H3 className={styles.chipLabel} px={8}>
+                Advanced
+              </H3>
               <Ul row px={0} g={12} wrap>
                 <Chip name="Typescript" url="https://www.typescriptlang.org/" />
                 <Chip name="React" url="https://react.dev/" />
@@ -89,7 +91,9 @@ function App() {
               </Ul>
             </Section>
             <Section px={24} g={16}>
-              <H3 px={8}>Medium</H3>
+              <H3 className={styles.chipLabel} px={8}>
+                Medium
+              </H3>
               <Ul row px={0} g={12} wrap>
                 <Chip name="NextJS" url="https://nextjs.org/" />
                 <Chip name="Express" url="https://expressjs.com/" />
@@ -102,7 +106,9 @@ function App() {
               </Ul>
             </Section>
             <Section px={24} g={16}>
-              <H3 px={8}>Interested in</H3>
+              <H3 className={styles.chipLabel} px={8}>
+                Interested in
+              </H3>
               <Ul row px={0} g={12} wrap>
                 <Chip name="RxJS" url="https://rxjs.dev/" />
                 <Chip name="Rollup" url="https://rollupjs.org/" />
