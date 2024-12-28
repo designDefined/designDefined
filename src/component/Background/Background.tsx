@@ -1,6 +1,7 @@
 import { useWelcomeMessage } from "../../hook/useWelcomeMessage";
 import styles from "./Background.module.css";
 import { Div } from "@flexive/core";
+import { BackgroundIcon } from "./BackgroundIcon/BackgroundIcon";
 
 export const Background = () => {
   const message = useWelcomeMessage();
@@ -15,6 +16,7 @@ export const Background = () => {
           For {message}
         </Div>
       )}
+      <BackgroundIcon />
     </Div>
   );
 };
