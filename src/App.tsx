@@ -34,6 +34,7 @@ function App() {
             .
           </P>
           <P block>v0.2.2 - Dec 27, 2024</P>
+          <Div basis="25vh" />
           <Section py={64} g={32}>
             <Divider title="Who am I" />
             <Ul row px={24} g={24} wrap>
